@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container pt-1">
+
+    <div class ="card">
+
+      <h2>HELLO MAAILMA {{ now }}</h2>
+
+      <!-- помещаем  в шаблон компонент TheHeader 
+      <the-header></the-header> 
+
+      <the-header></the-header> 
+      -->
+
+    </div>
+
+    <div class ="card" v-for="item in news" :key="item">
+      <h3>{{ item }}</h3>
+    </div>
+
+
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      now: new Date().toLocaleDateString(),
+      news:['Uutiset 1', 'UUtiset 2']
+    }
   }
+    
 }
+
+
 </script>
 
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+
 </style>
