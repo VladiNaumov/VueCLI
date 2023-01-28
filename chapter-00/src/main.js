@@ -9,7 +9,7 @@ import'./theme.css'
 
 const app = createApp(App)
 
-// global регистрастрация 
+// global регистрастрация компонента TheHeader
 app.component('the-header', TheHeader)
 
 app.mount('#app')
