@@ -5,12 +5,9 @@
 
       <h2>HELLO MAAILMA {{ now }}</h2>
 
-      <!-- помещаем  в шаблон компонент TheHeader 
-      <the-header></the-header> 
-
-      <the-header></the-header> 
-      -->
-
+      <!-- помещаем  в шаблон компонент TheHeader -->
+      <!--<the-header></the-header> -->
+ 
     </div>
 
     <div class ="card" v-for="item in news" :key="item">
