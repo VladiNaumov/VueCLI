@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import TheHeader from './TheHeader'
+import TheHeader from './components/TheHeader'
 import'./theme.css'
 
 

@@ -17,7 +17,6 @@
         v-bind:title="item.title"
         v-bind:id="item.id"
         v-bind:isOpen="item.isOpen"
-
                 
       ></app-news> 
 
@@ -34,7 +33,7 @@
 
 <script>
  
-import AppNews from './AppNews.vue';
+import AppNews from './components/AppNews.vue';
 
 
 export default {
