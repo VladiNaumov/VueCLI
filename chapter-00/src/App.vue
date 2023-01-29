@@ -3,7 +3,7 @@
 
     <div class ="card">
 
-      <h2>NEWS NOW {{ now }}</h2>
+      <h2>NEWS NOW {{ time }}</h2>
 
       
       <!-- помещаем  в шаблон компонент TheHeader -->
@@ -17,24 +17,30 @@
         v-bind:title="item.title"
         v-bind:id="item.id"
         v-bind:isOpen="item.isOpen"
-  
+
+                
       ></app-news> 
 
-    </div>
 
+    </div>
      
   </div>
   
 </template>
 
+
+
+
+
 <script>
  
 import AppNews from './AppNews.vue';
 
+
 export default {
   data(){
     return{
-      now: new Date().toLocaleDateString(),
+      time: new Date().toLocaleDateString(),
       news:[{
         title:'Президент Турции Тайип Эрдоган заявил, что Анкара может принять решение по членству Финляндии в НАТО', 
         id: 1,
@@ -50,7 +56,8 @@ export default {
   },
   components:{
     // локальное регистрация компонента 
-    'app-news': AppNews
+    'app-news': AppNews,
+   
       
   }
     
