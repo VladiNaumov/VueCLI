@@ -5,7 +5,9 @@
 </template>
 
 <script>
+
 export default {
+  
   emits: ['action'],
   props: {
     color: {

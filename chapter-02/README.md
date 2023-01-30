@@ -1,4 +1,4 @@
-# chapter-03
+# chapter-02
 
 ## Project setup
 ```

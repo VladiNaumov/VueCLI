@@ -5,9 +5,7 @@
 <template>
     <div class="card" >
         <h3>{{ title }}</h3>
-        <button class="btm" @click="open">
-            {{ isNewOpen ? 'Closed' : 'Open' }}
-        </button>
+        <button class="btm" @click="open">{{ isNewOpen ? 'Closed' : 'Open' }}</button>
 
         <p v-if="isNewOpen">В этой статье компонент Vue.js будет использоваться для 
             добавления функции комментариев на страницу сведений о блоге, 
@@ -70,6 +68,5 @@
 
         }
     }
-    
-    // 39:44
+  
 </script>
