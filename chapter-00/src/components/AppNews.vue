@@ -5,8 +5,11 @@
 <template>
     <div class="card" >
         <h3>{{ title }}</h3>
-        <button class="btm" @click="isOpen = !isOpen">открыть</button>
-        <p v-if="isOpen">В этой статье компонент Vue.js будет использоваться для 
+        <button class="btm" @click="open">
+            {{ isNewOpen ? 'Closed' : 'Open' }}
+        </button>
+
+        <p v-if="isNewOpen">В этой статье компонент Vue.js будет использоваться для 
             добавления функции комментариев на страницу сведений о блоге, 
             в основном для достижения следующих функций
         </p>
@@ -46,8 +49,25 @@
 
         data(){
             return{
-              isOpen: false
+              isNewOpen: this.isOpen
             }
+        },
+        methods:{
+            open(){
+                this.isNewOpen =!this.isNewOpen
+                if(this.isNewOpen){
+
+                    /*
+                $emit ('  ') оповещение родительского компонента о событие,
+                а родительский компонент будет отлавливать это событие с помощью установки атрибута v-on: "название_события"
+                 и при получении события поизводить определенные действия.
+                 */
+
+                    this.$emit('open-news') 
+                }
+               
+            }
+
         }
     }
     
