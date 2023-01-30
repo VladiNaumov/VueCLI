@@ -1,12 +1,11 @@
 <template>
   <button class="btn" :class="color" @click="$emit('action')">
-    {{ text }}
+    <slot />
   </button>
 </template>
 
 <script>
 export default {
-  
   emits: ['action'],
   props: {
     color: {
@@ -17,13 +16,11 @@ export default {
       }
     }
   },
-  /*
   methods: {
     btnLog() {
       console.log('Button log')
     }
   }
-  */
 }
 </script>
 
