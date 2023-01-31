@@ -8,7 +8,5 @@ import './css/theme.css'
 
 const app = createApp(App)
 
-/* (global) глобальная регистрастрация компонента HelloWorld */
-   //app.component('hello-World', HelloWorld)
 
 app.mount('#app')
