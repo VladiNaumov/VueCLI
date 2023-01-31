@@ -23,9 +23,9 @@
 </template>
 
 <script>
-import AppButton from './AppButton'
-import AppTextOne from './AppTextOne'
-import AppTextTwo from './AppTextTwo'
+import AppButton from './components/AppButton'
+import AppTextOne from './components/AppTextOne'
+import AppTextTwo from './components/AppTextTwo'
 
 export default {
   data() {
