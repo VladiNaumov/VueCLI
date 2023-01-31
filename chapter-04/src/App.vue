@@ -2,23 +2,17 @@
   <div class="container pt-1">
     <div class="card">
       <async-component></async-component>
-      <h2>Динамические и асинхронные компоненты</h2>
+      <h2>Динамические компоненты</h2>
 
-      <app-button
-        ref="myBtn"
-        :color="oneColor"
-        @action="active = 'one'"
-      >One</app-button>
+      <!-- С помощью атрибута ref для html-элемента устанавливается ключ, через который потом можно ссылаться на этот элемент. --> 
+      <app-button ref="myBtn" :color="oneColor" @action="active = 'one'" >One</app-button>
 
-      <app-button
-        :color="twoColor"
-        @action="active = 'two'"
-      >Two</app-button>
+      <app-button :color="twoColor" @action="active = 'two'">Two</app-button>
     </div>
 
-    <keep-alive>
-      <component :is="componentName"></component>
-    </keep-alive>
+    <!-- запоминание состояния  --> 
+    <keep-alive> <component :is="componentName"></component></keep-alive>
+
   </div>
 </template>
 
@@ -30,20 +24,16 @@ import AppTextTwo from './components/AppTextTwo'
 export default {
   data() {
     return {
-      active: 'one' // two
+      active: 'one'
     }
   },
   mounted() {
-    // setTimeout(() => {
-    //   this.componentName = 'new comp name'
-    // }, 1500)
 
     this.$refs.myBtn.btnLog()
   },
+  /*  вычисляемые свойства или computed properties, который во многом аналогичны функциям, но в то же время отличаются от них. */
   computed: {
-    // componentName() {
-    //   return 'app-text-' + this.active
-    // },
+   
     componentName: {
       get() {
         return 'app-text-' + this.active
@@ -59,6 +49,8 @@ export default {
       return this.active === 'two' ? 'primary' : ''
     }
   },
+
+  /* регистрация компонента */
   components: {AppButton, AppTextOne, AppTextTwo}
 }
 </script>
