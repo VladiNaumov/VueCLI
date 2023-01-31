@@ -13,6 +13,7 @@ src/chapter-01  (project "NEWS NOW" start)
 
 src/chapter-02 проект "NEWS NOW" (project FINISHED)
 
+src/chapter-03   slots - возможность установить контент по умолчанию
 
 Работа с элементами формы.
 
