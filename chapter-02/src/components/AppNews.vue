@@ -1,6 +1,7 @@
 <template>
   <div class="card">
     <h3>{{ title }}</h3>
+
     <app-button @action="open">{{ isNewsOpen ? 'Закрыть' : 'Открыть' }}</app-button>
 
     <app-button color="danger" v-if="wasRead" @action="$emit('unmark', id)" >Отметить непрочитанной</app-button>
@@ -23,8 +24,12 @@ import AppButton from './AppButton'
 import AppNewsList from './AppNewsList'
 
 export default {
-  // props: ['title'],
-  // emits: ['open-news'],
+
+  /*
+    параметр "props:{}" служит для передачи компоненту извне различные данные, определенные в этом параметре.
+    Через props:{} мы можем передать данные от родительского компонента в дочерний. 
+  */
+
   props: {
     wasRead: Boolean,
     title: {
@@ -44,6 +49,9 @@ export default {
       }
     }
   },
+
+  /* Объявление генерируемых событий. Компонент может явно объявить события родительского компонента, которые он будет генерировать, используя опцию :emits */
+
   emits: {
     'open-news': null,
     'read-news'(id) {
@@ -55,6 +63,7 @@ export default {
     },
     unmark: null
   },
+
   data() {
     return {
       isNewsOpen: this.isOpen
@@ -68,13 +77,23 @@ export default {
       }
     },
     mark() {
+
+   /*
+    $emit ('  ') оповещение родительского компонента о событие,
+    а родительский компонент будет отлавливать это событие с помощью установки атрибута v-on: "название_события"
+     и при получении события поизводить определенные действия.
+  */
+
       this.isNewsOpen = false
       this.$emit('read-news', this.id)
     },
+
     // unmark() {
     //   this.$emit('unmark', this.id)
     // }
   },
+
+  /* регистрация компонента   */
   components: {AppButton, AppNewsList}
 }
 </script>
