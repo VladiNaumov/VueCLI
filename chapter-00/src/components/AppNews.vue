@@ -2,21 +2,33 @@
     компонент - это маленькое Vue приложение и его нужно импортировать в main.js потом зарегистрировать 
     для того чтобы "Vue" знала о нем его нужно зарегистрировать -->
 
-<<template>
+<template>
+    <div class="card">
+    
+        <h2>{{title}}</h2>
 
-    <h2>{{title}}</h2>
+    </div>
+
+    <HelloVue>
+
+        
+    </HelloVue>
+    
 
 </template>
 
 
 <script>
 
+import HelloVue from './AppHello.vue';
+
 export default{
     data(){
         return{
-            title: 'The Header from AppNews'
+            title: 'The body from AppNews'
         }
-    }
+    },
+    components:{HelloVue}
 }
 
 

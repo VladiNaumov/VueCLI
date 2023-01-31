@@ -1,6 +1,5 @@
 <template>
   <div class="container pt-1">
-
     <div class ="card">
 
       <h2>NEWS NOW {{ time }}</h2>
@@ -57,12 +56,9 @@ export default {
     
           ]}
   },
-  components:{
-    // локальное регистрация компонента 
-    'app-news': AppNews,
-   
-      
-  }
+
+  // локальное регистрация компонента
+  components:{AppNews}
     
 }
 

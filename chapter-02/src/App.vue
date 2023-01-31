@@ -86,10 +86,9 @@
         this.readRate--
       }
     },
-    components: {
-      /* локальное регистрация компонента */
-          AppNews
-    }
+
+    /* локальное регистрация компонента */
+    components: {AppNews }
   }
 </script>
 
