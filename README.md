@@ -65,6 +65,8 @@ node -v
 npm -v
 
 npm install -g @vue/cli
+
+/* проверка версии vue */
 vue -V
 
 /* создание проекта под именем chapter-00 */
