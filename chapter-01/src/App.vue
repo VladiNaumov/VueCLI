@@ -6,10 +6,6 @@
 
       <span>Open: {{ openRate }}</span>
 
-      
-      <!-- помещаем  в шаблон компонент TheHeader -->
-      <!--<the-header></the-header> -->
-
       <!-- помещаем  в шаблон компонент AppNews -->
       <app-news 
 
@@ -29,14 +25,9 @@
   
 </template>
 
-
-
-
-
 <script>
  
 import AppNews from './components/AppNews.vue';
-
 
 export default {
   data(){
@@ -59,13 +50,9 @@ export default {
 
   // локальное регистрация компонента
   components:{AppNews}
-    
 }
 
-
 </script>
-
-
 
 <style>
 

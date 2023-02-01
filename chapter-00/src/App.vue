@@ -1,11 +1,11 @@
 <!-- это главный компонент:  -->
 
-
 <template>
   <div class="container pt-1">
     <div class ="card">
 
       <h1>{{title}}</h1>
+      
       
       <AppNews>
 

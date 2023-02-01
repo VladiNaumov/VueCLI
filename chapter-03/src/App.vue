@@ -27,11 +27,8 @@
         <small>Это footer</small>
       </template>
 
-
     </app-block>
-  
-
-  </div>
+    </div>
 </template>
 
 <script>
