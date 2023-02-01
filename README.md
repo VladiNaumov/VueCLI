@@ -56,3 +56,33 @@ Vue 3 полностью переписан на TypeScript и он облада
 
 src/chapter-00 
 В этом блоке мы напишем целое приложение с нуля, где соединим все те знания, которые получили на протяжении курса. Это будет полноценное приложение с базой данных, авторизацией и админкой.
+
+
+/* проверка версии node */
+node -v
+
+/* проверка версии npm */
+npm -v
+
+npm install -g @vue/cli
+vue -V
+
+/* создание проекта под именем chapter-00 */
+
+vue create chapter-00 
+
+- manually select feature
+- Babel, CSS Pre-processor, LInter/Formatter.
+- 3.x (Preview)
+- Sass/SCSS (with node-sass)
+- ESLint + Standard config
+- Lint and fix on commit
+- In dedicated config files
+- No
+
+
+cd chapter-00
+npm run serve
+
+/* когда зависимости не подгружены */
+npm install 

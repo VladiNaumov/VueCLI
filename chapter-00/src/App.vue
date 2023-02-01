@@ -39,9 +39,7 @@ export default{
     components:{AppNews,  HelloVue}
 }
 
-
 </script>
-
 
 <style scoped>
  
