@@ -68,7 +68,6 @@ npm install -g @vue/cli
 vue -V
 
 /* создание проекта под именем chapter-00 */
-
 vue create chapter-00 
 
 - manually select feature
@@ -82,6 +81,7 @@ vue create chapter-00
 
 
 cd chapter-00
+
 npm run serve
 
 /* когда зависимости не подгружены */
