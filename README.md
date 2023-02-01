@@ -64,6 +64,7 @@ node -v
 /* проверка версии npm */
 npm -v
 
+/* install vue.js */
 npm install -g @vue/cli
 
 /* проверка версии vue */

@@ -1,11 +1,10 @@
 <template>
   <div class="container pt-1">
     <div class="card">
-      <async-component></async-component>
       <h2>Динамические компоненты</h2>
 
       <!-- С помощью атрибута ref для html-элемента устанавливается ключ, через который потом можно ссылаться на этот элемент. --> 
-      <app-button ref="myBtn" :color="oneColor" @action="active = 'one'" >One</app-button>
+      <app-button ref="myBtn" :color="oneColor" @action="active = 'one'">One</app-button>
 
       <app-button :color="twoColor" @action="active = 'two'">Two</app-button>
     </div>
