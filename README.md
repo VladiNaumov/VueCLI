@@ -6,21 +6,21 @@ src/chapter-00
 
 Создание компонентов. 
 
-src/chapter-01  (project "NEWS NOW" start)
+src/chapter-01: project "NEWS NOW" START
 
-src/chapter-02 проект "NEWS NOW" (project FINISHED)
+src/chapter-02: project "NEWS NOW" FINISHED
 
-src/chapter-03  slots - возможность установить контент по умолчанию
+src/chapter-03:  slots - возможность установить контент по умолчанию
 
-src/chapter-04  Динамические компоненты
+src/chapter-04:  Динамические компоненты
 
 Работа с элементами формы в Vue
 
-src/chapter-05
+src/chapter-05:
 
-src/chapter-06
+src/chapter-06:
 
-src/chapter-07
+src/chapter-07:
 
 Vue и работа с HTTP.
 
