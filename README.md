@@ -13,9 +13,9 @@ src/chapter-01  (project "NEWS NOW" start)
 
 src/chapter-02 проект "NEWS NOW" (project FINISHED)
 
-src/chapter-03   slots - возможность установить контент по умолчанию
+src/chapter-03  slots - возможность установить контент по умолчанию
 
-src/chapter-04   Динамические компоненты
+src/chapter-04  Динамические компоненты
 
 Работа с элементами формы.
 
