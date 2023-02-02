@@ -4,8 +4,7 @@
     <p>«Наша система ПВО отработала. По предварительным данным, пострадавших нет. Последствия на земле уточняются».</p>
 
     <!-- поле ввод с клавиатуры  --> 
-    <div class="form-control"><input type="text">
-    </div>
+    <div class="form-control"><input type="text"></div>
   </div>
 </template>
 

@@ -2,9 +2,8 @@
   <div class="container pt-1">
     <div class ="card">
 
-      <h2>NEWS NOW {{ time }}</h2>
-
-      <span>Open: {{ openRate }}</span>
+      <h2>NEWS NOW {{ time }}</h2> 
+      <span>Открыто: <strong>{{ openRate }}</strong></span>
 
       <!-- помещаем  в шаблон компонент AppNews -->
       <app-news 
@@ -51,10 +50,10 @@ export default {
   // локальное регистрация компонента
   components:{AppNews}
 }
-
 </script>
 
-<style>
-
-
+<style scoped>
+  h2 {
+    color: blue;
+  }
 </style>

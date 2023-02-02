@@ -10,14 +10,15 @@
     <!-- помещаем  в шаблон компонент AppNews -->
     <app-news
         v-for="item in news"
-        :key="item.id"
-        :title="item.title"
-        :id="item.id"
-        :is-open="item.isOpen"
-        :was-read="item.wasRead"
-        @open-news="openNews"
-        @read-news="readNews"
-        @unmark="unreadNews"
+        v-bind:key="item.id"
+        v-bind:title="item.title"
+        v-bind:id="item.id"
+        v-bind:is-open="item.isOpen"
+        v-bind:was-read="item.wasRead"
+        v-on:open-news="openNews"
+
+        v-on:read-news="readNews"
+        v-on:unmark="unreadNews"
     ></app-news>
 
   </div>
@@ -88,7 +89,7 @@
     },
 
     /* локальное регистрация компонента */
-    components: {AppNews }
+    components:{AppNews}
   }
 </script>
 

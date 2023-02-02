@@ -1,4 +1,4 @@
-import { createApp} from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import './css/theme.css'
 
@@ -9,6 +9,6 @@ import './css/theme.css'
 const app = createApp(App)
 
 /* (global) глобальная регистрастрация компонента */
-   
+ //app.component('the-header', TheHeader)  
 
 app.mount('#app')
