@@ -3,8 +3,10 @@
 
 <template>
   <div class="card">
+     <!-- вывод значения с помощью интерполяции -->
     <h3>{{ title }}</h3>
 
+    <!--Также мы можем использовать сокращенный синтаксис для определения обработчиков событий: @action == v-on:-->
     <app-button @action="open">{{ isNewsOpen ? 'Закрыть' : 'Открыть' }}</app-button>
 
     <app-button color="danger" v-if="wasRead" @action="$emit('unmark', id)" >Отметить непрочитанной</app-button>

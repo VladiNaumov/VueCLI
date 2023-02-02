@@ -1,7 +1,7 @@
 <template>
   <div class="container pt-1">
     <div class ="card">
-
+       <!-- вывод значения с помощью интерполяции -->
       <h2>NEWS NOW {{ time }}</h2> 
       <span>Открыто: <strong>{{ openRate }}</strong></span>
 
@@ -16,7 +16,8 @@
         v-on:open-news="openRate++"
                 
       ></app-news> 
-
+        <!--Для обработки ввода пользователя и событий элементов html в Vue 3 применяется директива v-on,
+       после которой через двоеточие указывается тип обрабатываемого события: -->
 
     </div>
      

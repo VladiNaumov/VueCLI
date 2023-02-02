@@ -1,4 +1,5 @@
 <template>
+   <!--Также мы можем использовать сокращенный синтаксис для определения обработчиков событий: @click == v-on:-->
   <button class="btn" :class="color" @click="$emit('action')">
         
    <slot> <!-- slots - возможность установить контент по умолчанию -->  </slot>
@@ -31,6 +32,7 @@ export default {
             console.log("Button log");
         }
     },
+    /* регистрация компонента   */
     components: { slotFlagsText }
 }
 </script>

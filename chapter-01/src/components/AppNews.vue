@@ -3,8 +3,9 @@
 
 <template>
     <div class="card" >
+        <!-- вывод значения с помощью интерполяции -->
         <h3>{{ title }}</h3>
-
+         <!--Также мы можем использовать сокращенный синтаксис для определения обработчиков событий: @action == v-on:-->
         <button class="btm" @click="open">{{ isNewOpen ? 'Закрыть' : 'Открыть' }}</button>
 
         <div v-if="isNewOpen">

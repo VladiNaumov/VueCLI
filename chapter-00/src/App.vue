@@ -4,6 +4,7 @@
   <div class="container pt-1">
     <div class ="card">
 
+      <!-- вывод значения с помощью интерполяции -->
       <h1>{{title}}</h1>
       
       

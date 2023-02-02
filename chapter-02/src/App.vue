@@ -1,7 +1,7 @@
 <template>
   <div class="container pt-1">
     <div class="card">
-
+      <!-- вывод значения с помощью интерполяции -->
       <h2>NEWS NOW {{ now }}</h2>
       <span>Открыто: <strong>{{ openRate }}</strong> | Прочитано: <strong>{{ readRate }}</strong></span>
       
@@ -15,11 +15,14 @@
         v-bind:id="item.id"
         v-bind:is-open="item.isOpen"
         v-bind:was-read="item.wasRead"
+        
         v-on:open-news="openNews"
-
         v-on:read-news="readNews"
         v-on:unmark="unreadNews"
     ></app-news>
+
+    <!--Для обработки ввода пользователя и событий элементов html в Vue 3 применяется директива v-on,
+       после которой через двоеточие указывается тип обрабатываемого события: -->
 
   </div>
 

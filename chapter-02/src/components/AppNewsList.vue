@@ -1,5 +1,6 @@
 <template>
   <hr />
+  <!-- вывод значения с помощью интерполяции -->
   <h4>{{ title }}</h4>
   <ul>
     <li v-for="item in news">{{item.title}} <span v-if="item.wasRead">!!!</span></li>
