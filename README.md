@@ -16,11 +16,9 @@ src/chapter-04:  Динамические компоненты
 
 Работа с элементами формы в Vue
 
-src/chapter-05:
+src/chapter-05: создание формы (в одном компоненте App.vue) Basic
 
-src/chapter-06:
-
-src/chapter-07:
+src/chapter-06: создание формы (использование подхода компоненты) Medium
 
 Vue и работа с HTTP.
 
