@@ -77,7 +77,7 @@
 </template>
 
 <script>
-  import AppInput from './AppInput'
+  import AppInput from './components/AppInput'
   export default {
     data() {
       return {
