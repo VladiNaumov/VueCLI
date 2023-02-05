@@ -22,8 +22,9 @@ src/chapter-06: создание формы (использование подх
 
 Vue и работа с HTTP.
 
-src/chapter-00 
-Из блока вы узнаете, как Vue работает с сервером и базой данных. Мы создадим новое приложение, подключим к нему базу данных и будем работать с REST API сразу на практике. Вы узнаете как работать с методом fetch, с библиотекой axios и как правильно работать с асинхронными данными.
+src/chapter-07: 
+Vue работа с сервером и базой данных. Работаем  с REST API. Пример использования  метода  "fetch", библиотека  "axios", работа с асинхронными данными.
+
 
 Миксины, директивы и плагины.
 
@@ -72,7 +73,7 @@ vue -V
 vue create chapter-00 
 
 - manually select feature
-- Babel, CSS Pre-processor, LInter/Formatter.
+- Babel (компилятор), CSS Pre-processor, LInter/Formatter (если нужен).
 - 3.x (Preview)
 - Sass/SCSS (with node-sass)
 - ESLint + Standard config
