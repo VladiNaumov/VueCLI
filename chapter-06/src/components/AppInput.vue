@@ -14,13 +14,21 @@
 
 <script>
 export default {
+  /*
+     emits [' '] оповещение родительского компонента о событие, а родительский компонент будет отлавливать это событие 
+     с помощью установки атрибута v-on: "название_события"  и при получении события поизводить определенные действия.
+  */
   emits: ['update:value'],
+
+  /*  параметр "props:{}" служит для передачи данному компоненту извне различные данные, определенные в этом параметре. */
+  
   props: {
     value: String,
     placeholder: String,
     label: String,
     error: String
   },
+  
   methods: {
     change(event) {
       this.$emit('update:value', event.target.value)
