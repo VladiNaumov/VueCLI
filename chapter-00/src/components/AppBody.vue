@@ -4,16 +4,21 @@
 <template>
     <div class="card">
         <!-- вывод значения с помощью интерполяции -->
-        <h2>{{title}}</h2>
+        
+        <h1>{{ title }}</h1>
 
+        <p>{{ text }}</p>
+            
+            
     </div>
 
-    <HelloVue>
+     <div>
+        <HelloVue>
 
-        
-    </HelloVue>
+        </HelloVue>
+
+    </div>
     
-
 </template>
 
 
@@ -22,13 +27,20 @@
 import HelloVue from './AppHello.vue';
 
 export default{
+    props:{
+        text: String,
+              
+    },
+
+    
     data(){
         return{
-            title: 'The body from AppNews'
+            title: 'The body'
         }
     },
+    
+
     components:{HelloVue}
 }
-
 
 </script>

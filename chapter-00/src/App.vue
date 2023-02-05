@@ -7,17 +7,10 @@
       <!-- вывод значения с помощью интерполяции -->
       <h1>{{title}}</h1>
       
-      
-      <AppNews>
+     <AppBody v-bind:text="appBody"></AppBody>
 
-      </AppNews>
-      
-      
-      <HelloVue>
-        
-      </HelloVue>
-      
-
+      <HelloVue> </HelloVue>
+     
     </div>
      
   </div>
@@ -27,17 +20,18 @@
 
 <script>
 
-import AppNews from './components/AppNews.vue';
+import AppBody from './components/AppBody.vue';
 import HelloVue from './components/AppHello.vue';
 
 export default{
     data(){
         return{
-            title: 'The Header from App.vue'
+            title: "The Header",
+            appBody: "Test.. test... test ---->   Hello, Im AppBody"
         }
     },
     
-    components:{AppNews,  HelloVue}
+    components:{AppBody,  HelloVue}
 }
 
 </script>
