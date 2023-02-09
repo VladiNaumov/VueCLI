@@ -55,6 +55,7 @@ export default {
       })
 
       const firebaseData = await response.json()
+      console.log(firebaseData)
 
       this.people.push({
         firstName: this.name,
