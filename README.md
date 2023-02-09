@@ -23,7 +23,7 @@ src/chapter-06: создание формы (использование подх
 
 src/chapter-07: работа с базой данных. Работаем с REST API. Пример использования  метода  "fetch", библиотека  "axios", работа с асинхронными данными.
 
-src/chapter-08: project CV. Работаем с REST API Google Firebase
+src/chapter-08: project CV. Работаем с REST API Google Firebase (от туда мы загружаем  только комментарии - кликая по кнопке загрузить комментарии )
 
 ### Vue Router.
 
